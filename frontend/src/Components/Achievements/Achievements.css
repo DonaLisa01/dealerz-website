@@ -1,0 +1,42 @@
+.achievement {
+    padding: 20px; 
+    text-align: center; 
+    background-color: #f0f0f0;
+    margin-top: auto; 
+}
+
+.achievement h2 {
+    font-size: 2rem; 
+    margin-bottom: 10px;
+    text-align: center; 
+    color: #11142D;
+}
+
+.achievement img {
+    padding: 10px;
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+@media (max-width: 768px) {
+    .achievement h2 {
+        font-size: 1.5rem;
+    }
+
+    .achievement img {
+        padding: 10px 40px 10px 40px
+    }
+}
+
+@media (max-width: 480px) {
+    .achievement h2 {
+        font-size: 1.2rem;
+    }
+
+    .achievement img {
+        padding: 0; 
+    }
+}
+

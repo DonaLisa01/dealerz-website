@@ -1,0 +1,191 @@
+
+.top-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+ padding-bottom: 100px;
+ 
+  
+}
+
+.top-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-header h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 2px;
+  color: #11142D;
+}
+
+.top-header p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 125%;
+  margin-bottom: 10px;
+  color: #515151;
+  height: 40px;
+  width: 600px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;  
+}
+
+.top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.top {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.top-itemt-container {
+  display: flex;
+  width: 100%;
+}
+
+.top-itemt {
+  flex: 1 0 33.33%;
+  position: relative;
+  overflow: hidden;
+}
+
+.itemt-image-container {
+  text-align: center;
+  position: relative;
+}
+
+.itemt-image {
+  width: 100%;
+  max-width: 300px;
+}
+
+.itemt-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+.itemt-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.itemt-subtitle,
+.itemt-price {
+  font-size: 1rem;
+}
+
+.itemt-price {
+  font-weight: bold;
+  color: #F3692E;
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 10px;
+  z-index: 10;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 10px;
+  z-index: 10;
+}
+
+
+@media (max-width: 768px) {
+  .top-itemt {
+    flex: 1 0 50%;
+  }
+
+  .top-header h2 {
+    font-size: 36px;
+  }
+
+  .top-header p {
+    font-size: 14px;
+    width:490px ;
+  }
+
+  .itemt-title {
+    font-size: 1rem;
+  }
+
+  .itemt-subtitle,
+  .itemt-price {
+    font-size: 0.9rem;
+  }
+
+  .arrow-button {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .top-itemt {
+    flex: 1 0 100%; 
+  }
+
+  .top-header h2 {
+    font-size: 24px;
+  }
+
+  .top-header p {
+    font-size: 12px;
+  }
+
+  .itemt-title {
+    font-size: 0.9rem;
+  }
+
+  .itemt-subtitle,
+  .itemt-price {
+    font-size: 0.8rem;
+  }
+
+  .arrow-button {
+    font-size: 1.5rem;
+  }
+}
+
+
+  
+
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  

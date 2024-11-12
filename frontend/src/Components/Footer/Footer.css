@@ -1,0 +1,176 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px;
+  background-color: #f8f8f8;
+  width: 100%;
+  max-width: 1440px;
+  height: 300px;
+  flex-wrap: wrap;
+ 
+}
+
+.footer-left {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+padding-left: 10px;
+}
+
+.footer-left .square {
+  width: 400px;
+  height: 200px;
+  background-color: #E2E2EA;
+}
+
+.footer-right {
+ 
+ padding-left: 50px;
+  padding-top: 10px;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.dealer-container {
+  display: flex;
+  align-items: center;
+  gap: 650px;
+}
+
+.dealer-name {
+  font-size: 2rem;
+  margin-right: 45px;
+  color: #F86338;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.dealer-image {
+  width: 208px;
+  height: 40px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer-links p {
+  margin: 5px 0;
+}
+
+.footer-rights {
+  font-size: 0.8rem;
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: row;
+    padding: 30px 20px;
+    height: auto; 
+  }
+
+  .footer-left {
+    padding-left: 50px;
+    width: 30%;
+    justify-content: flex-start;
+    margin-bottom: 20px; 
+  }
+
+  .footer-left .square {
+    width: 200px;
+    height: 200px;
+    background-color: #E2E2EA;
+  }
+
+  .footer-right {
+    padding-top: 20px;
+    width: 70%;
+    padding-left: 20px;
+    align-items: flex-start;
+  }
+
+  .dealer-container {
+    gap: 208px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+
+  .dealer-name {
+    font-size: 1.5rem;
+  }
+
+  .dealer-image {
+    width: 150px;
+    height: auto;
+  }
+
+  .footer-rights {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 460px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px 10px;
+    height: auto;
+  }
+
+  .footer-left {
+    padding-left: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .footer-left .square {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto; /* Center the square */
+  }
+
+  .footer-right {
+    padding-top: 15px;
+    width: 100%;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dealer-container {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dealer-name {
+    font-size: 1.2rem;
+    margin-left: 100px;
+  }
+
+  .dealer-image {
+    width: 100px;
+    height: auto;
+  }
+
+  .footer-rights {
+    font-size: 0.6rem;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+  
+  

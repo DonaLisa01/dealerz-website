@@ -1,0 +1,173 @@
+.collection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #ecf1f1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  animation: fadeIn 0.5s forwards;
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+.collection-dropdown{
+  margin-bottom: 20px;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.collection h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #11142D;
+
+}
+
+.collection-menu {
+  display: flex;
+  justify-content: center;
+  gap: 120px; 
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #9A9AB0;
+  
+}
+
+.menu-item {
+  width: 320px;
+  color: #9A9AB0;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.collection-menu li:hover{
+  color: #F3692E;
+  transform: scale(1.1);
+}
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #fff;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(218, 213, 213, 0.5);
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img.e {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #11142D;
+  font-size: 34px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.card h6 {
+  font-size: 0.8rem;
+  color: #9A9AB0;
+  margin: 0.3rem 0;
+}
+
+.card img {
+  width: 36px;
+  height: 36px;
+}
+
+.find-more {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #F3692E;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.find-more:hover {
+  transform: scale(1.1);
+  background-color: #d45a23;
+}
+
+
+@media (max-width: 768px) {
+  .collection {
+    padding: 60px; 
+  }
+  
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr) !important; 
+    gap: 15px !important; 
+    padding: 0 10px !important;
+    margin: 0 40px; 
+  }
+
+  .card {
+    height: 400px; 
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  .card img.e {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .collection-menu {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .collection-dropdown {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+  
+  

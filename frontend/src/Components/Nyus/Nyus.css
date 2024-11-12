@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.N {
+  background-color: #f1f1f1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nn {
+  padding-top: 100px;
+  max-width: 1230px;
+  width: 100%;
+  height: 408px;
+  margin: 100px auto;
+  
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.nn h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #11142D;
+  margin: 0 auto 10px;
+  max-width: 796px;
+}
+
+.nn p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: #9A9AB0;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 70%;
+}
+
+.mailt {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailt input[type="text"] {
+  padding: 10px 50px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 1000px;
+  height: 64px;
+  background-color: #F4F7F8;
+  margin-left: 100px;
+  
+}
+
+.mailt input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.mailt img {
+  width: 48px;
+  height: 48px;
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+ position: absolute;
+right: 70px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .N {
+    width: 100%;
+  }
+
+  .nn {
+    width: 90%;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .nn h2 {
+    font-size: 24px; 
+    width: auto;
+    padding-right: 0;
+  }
+
+  .nn p {
+    font-size: 14px; 
+    width: auto;
+  }
+
+  .mailt input[type="text"] {
+    width: 100%;
+    margin-right: 60px;
+  }
+
+  .mailt img {
+    width: 45px;
+    height: 45px;
+    margin-right: auto;
+  }
+}
+

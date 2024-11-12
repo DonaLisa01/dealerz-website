@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    margin: 0;
+    
+    font-family: Arial, sans-serif;
+}
+.containerp {
+    padding-top: 70px;
+    padding-left: 46px;
+    display: flex;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    
+    padding-right: 250px;
+}
+
+.sidebarp {
+    margin: 0;
+    width: 25%;
+    padding-right: 20px;
+    background-color: #f5f5f5;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search-containerp {
+    padding-top: 20px;
+    height: 56px;
+    width:296px;
+    margin: 0;
+    width: 100%;
+    
+ 
+}
+
+.search-inputp {
+    width: 100%; 
+    padding: 10px 40px 15px 10px; 
+    font-size: 14px;
+    border: 1px solid #11142D;
+    border-radius: 3px;
+    background-color: #f5f5f5; 
+}
+
+.search-iconp {
+    position: absolute;
+   padding-top: 40px;
+ left: 10%;
+    transform: translateY(-50%);
+    width: 20px;
+    cursor: pointer;
+    padding-left: -15px;
+    margin-left: 120px;
+}
+.filter {
+    padding-top: 25px;
+    width: 245px;
+    padding-bottom: 25px;
+}
+.price-rangep{
+    display: flex;
+    gap: 128px;
+}
+
+
+.product-pricep{
+    padding-top: 65px;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-pricep img{
+    padding-left: 170px;
+}
+.pc{
+    padding-top: 70px;
+}
+
+
+.categoriesp {
+
+    list-style: none;
+    padding-top: 40px;
+   
+}
+.categoriesp li img{
+    padding-right: 50px;
+}
+
+.categoriesp li {
+    padding-top: 40px;
+padding-bottom:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .p-image {
+    justify-content: space-between; 
+    padding-left: 40px;
+   
+  }
+  .fp{
+    padding-top: 80px;
+  }
+  
+
+.featured-productsp {
+ 
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.featured-itemp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-placeholderp {
+    width: 50px;
+    height: 50px;
+}
+
+.product-gridp {
+    width: 70%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 20px;
+    position: relative;
+    box-sizing: border-box; 
+}
+
+.product-cardp {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.product-imagep {
+    width: 424px;
+    height: 375px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+   
+}
+
+.product-cardp h4 {
+    font-size: 20px;
+    color: #11142D;
+    margin: 10px 0 5px;
+}
+
+.ratingp {
+    color: #F3692E;
+    font-size: 14px;
+}
+
+.product-textp {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.pricep {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F3692E;
+    margin-top: 5px;
+}
+
+.see-morep {
+    width: 122px;
+    height: 56px;
+    background-color: #F3692E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px auto 0;
+    text-align: center;
+    grid-column: span 2;
+}
+@media (max-width: 768px) {
+   
+    
+   
+        .search-containerp {
+            width: 120px;
+        }
+    
+        .search-iconp {
+            left: 130px; 
+            margin-left: 0; 
+        }
+    
+
+   
+        .product-gridp {
+            
+            width: 90%; 
+        }
+    
+        .product-cardp {
+            padding: 70px;
+        }
+    
+        .product-imagep {
+            width: 120px; 
+           height: 120px;
+            object-fit: fill;
+            
+        }
+        
+    }

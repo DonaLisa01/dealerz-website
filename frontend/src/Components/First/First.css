@@ -1,0 +1,164 @@
+
+.first {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  height: 500px;
+
+}
+
+.first-left {
+  flex: 1;
+}
+
+.first-left img {
+  padding-bottom: 190px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.first-right {
+  flex: 1;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+.first-right h1 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0.3%;
+  margin-right: 20px;
+ margin-top: 20px;
+
+width: 593px;
+  
+}
+
+.first-right p {
+  padding-top: 30px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.fb{
+  height: 56px;
+  width: 157px;
+}
+.first-right button {
+  margin-top: 20px;
+  background-color: #F3692E;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.right-img {
+  position: relative;
+  left: 600px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.first-left img:hover,
+.first-right img:hover,
+.right-img:hover {
+  transform: scale(1.05);
+  opacity: 0.9; 
+}
+
+
+@media (max-width: 768px) {
+  .first-left, .first-right {
+    flex: 1;  
+    width: 50%;  
+    padding: 10px; 
+  }
+
+  .first-left img {
+    width: 20%; 
+    max-width: 100%; 
+    padding-bottom: 10px; 
+  }
+
+  .first-right h1 {
+    font-size: 32px; 
+    width: 300px;
+    height: 80px;
+    margin-right: 0; 
+  }
+
+  .first-right p {
+    font-size: 14px; 
+    width: 100%; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+  .first-right button {
+    width: 50%; 
+  }
+}
+@media (max-width: 460px) {
+  .first {
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    height: auto;
+  }
+
+  .first-left, .first-right {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .first-left img {
+    width: 80%; /* Scale image down to fit smaller screens */
+    max-width: 100%;
+    padding-bottom: 5px;
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
+
+  .first-right h1 {
+    font-size: 24px;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .first-right p {
+    font-size: 12px;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .fb {
+    width: 120px;
+    height: 40px;
+  }
+
+  .first-right button {
+    width: 100%; /* Full width for smaller screens */
+    padding: 10px;
+  }
+
+  .right-img {
+    left: 0;
+    width: 80%; /* Adjust size for smaller screens */
+    max-width: 100%;
+    margin: 0 auto; /* Center align */
+  }
+}
